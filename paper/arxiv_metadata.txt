@@ -1,0 +1,109 @@
+================================================================================
+  arXiv SUBMISSION METADATA
+  Cybersyn 2.0: A Demand-Based Cybernetic Control System for Urban Energy Grids
+  Prepared: March 26, 2026
+================================================================================
+
+TITLE:
+  Cybersyn 2.0: A Demand-Based Cybernetic Control System for Urban Energy Grids
+
+SUBTITLE (optional):
+  Evidence from Four Validation Stages: Hamburg and Northern Germany
+
+AUTHORS:
+  Tobias Buß
+  Independent Researcher, Hamburg, Germany
+  Email: tobi196183@gmail.com
+  ORCID: [register at https://orcid.org if not yet assigned]
+
+PRIMARY CATEGORY:
+  econ.GN  (General Economics)
+
+CROSS-LIST CATEGORIES:
+  cs.SY    (Systems and Control)
+  eess.SY  (Systems and Control — Electrical Engineering and Systems Science)
+
+MSC CLASSES:
+  93A30  (Mathematical modelling of systems)
+  91B76  (Environmental economics — energy economics)
+
+ACM CLASSES (optional):
+  I.6.4  (Model Validation and Analysis)
+  J.3    (Life and Medical Sciences — energy systems)
+
+--------------------------------------------------------------------------------
+ABSTRACT
+(exact text from paper, 1,920 characters or fewer for arXiv field):
+--------------------------------------------------------------------------------
+
+This paper presents Cybersyn 2.0, a demand-based cybernetic control system for urban
+and regional energy distribution, validated through four successive simulation stages
+using real-world data. Inspired by Stafford Beer's Viable System Model and the
+Chilean Cybersyn project (1971-1973), the system implements a Proportional-Integral
+(PI) controller and subsequently a Model Predictive Controller (MPC) operating
+without price signals, using physical supply-demand balance as the sole feedback
+variable. Four validation stages are presented: (1) annual resolution using Eurostat
+data for Hamburg, 1990-2024; (2) hourly resolution using SMARD API data, 2022-2023,
+with Beer's Algedonic Channel for crisis response; (3) multi-sector coupling
+integrating electricity, heat, and electric vehicle mobility with 72-hour predictive
+foresight; and (4) regional fractal networking across three nodes -- Hamburg,
+Schleswig-Holstein, and Lower Saxony -- implementing inter-regional solidarity
+transfers. Results consistently demonstrate that demand-based cybernetic control
+outperforms a reactive price-signal market model: supply deficit reductions of 60-88%
+in single-node scenarios, and 100% supply rate under all stress scenarios in the
+regional network. Winter crisis resilience is 23x superior in Stage 2 (hourly), and
+the market mechanism collapses to 63.8% supply rate under a cold-wave scenario where
+Cybersyn maintains 86.2%. The Solidarity Index -- a metric exclusively producible
+under cybernetic coordination -- quantifies the structural difference between
+demand-driven and price-driven allocation. Limitations, including synthetic regional
+data and simplified investment modeling, are explicitly discussed. Code and data are
+fully open-source.
+
+--------------------------------------------------------------------------------
+COMMENTS:
+--------------------------------------------------------------------------------
+
+  4 simulation stages, open-source code at github.com/tib019/cybersyn2-hamburg.
+  Submitted for review to Energy Policy (Elsevier).
+
+--------------------------------------------------------------------------------
+JOURNAL REFERENCE (leave blank until accepted):
+--------------------------------------------------------------------------------
+
+  [Leave blank — submission to Energy Policy pending]
+
+--------------------------------------------------------------------------------
+REPORT NUMBER (leave blank if none):
+--------------------------------------------------------------------------------
+
+  [N/A — Independent Researcher]
+
+--------------------------------------------------------------------------------
+KEYWORDS (for arXiv search indexing):
+--------------------------------------------------------------------------------
+
+  cybernetics; energy systems; demand planning; Viable System Model; model predictive
+  control; sector coupling; regional energy networks; Stafford Beer; Hamburg; smart
+  grid; demand response; Algedonic Channel; Solidarity Index
+
+--------------------------------------------------------------------------------
+arXiv SUBMISSION CHECKLIST:
+--------------------------------------------------------------------------------
+
+[ ] Register / log in at https://arxiv.org
+[ ] Create submission: "New Submission" → select econ.GN as primary category
+[ ] Upload main.tex + references.bib as .tar.gz archive
+[ ] Set primary category: econ.GN
+[ ] Add cross-list: cs.SY (and optionally eess.SY)
+[ ] Paste abstract (above) into the abstract field — verify character count ≤ 1920
+[ ] Author: Tobias Buß  (note: ß = \ss in LaTeX; ensure UTF-8 encoding in submission)
+[ ] Add MSC classes: 93A30, 91B76
+[ ] Add comment: "4 simulation stages, open-source code at
+    github.com/tib019/cybersyn2-hamburg. Submitted for review to Energy Policy (Elsevier)."
+[ ] Verify GitHub repository is public before submission
+[ ] Note: arXiv moderation for econ.GN typically takes 1–3 business days
+[ ] After arXiv acceptance: add arXiv ID to Energy Policy cover letter
+
+================================================================================
+END OF METADATA
+================================================================================
