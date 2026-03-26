@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Daten-Cache (zu groß für Git)
+smard_cache_v2/
+weather_raw.json
+simulation_results*.csv
+simulation_results_s3.csv
+
+# Dashboards (zu groß für Git, lokal generieren)
+dashboard_stufe2.html
+dashboard_stufe3.html
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Umgebung
+.env
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
