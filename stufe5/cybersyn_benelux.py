@@ -370,7 +370,14 @@ if __name__ == '__main__':
     # ── Stresstest C: Nordsee-Sturm ───────────────────────────────────────
     print('\n[5] Stresstest C: Nordsee-Sturm (10–13 Feb 2023, Offshore-Wind 350%)')
     bnl_C = apply_nordsee_sturm(bnl_base)
-    de_C  = apply_nordsee_sturm(de_base)  # SH ebenfalls betroffen
+    # SH (DE) ebenfalls betroffen: Sturm-Bonus auf Wind, Last leicht erhöht
+    de_C = {k: df.copy() for k, df in de_base.items()}
+    mask_sturm = (
+        (de_C['SH'].index >= pd.Timestamp('2023-02-10', tz='UTC')) &
+        (de_C['SH'].index <  pd.Timestamp('2023-02-13', tz='UTC'))
+    )
+    de_C['SH'].loc[mask_sturm, 'erzeugung_gesamt'] *= 2.5
+    de_C['SH'].loc[mask_sturm, 'last']             *= 1.10
     mask_C = pd.Series(
         (idx >= pd.Timestamp('2023-02-10', tz='UTC')) &
         (idx <  pd.Timestamp('2023-02-13', tz='UTC')), index=idx
